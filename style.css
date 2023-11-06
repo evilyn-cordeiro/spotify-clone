@@ -1,16 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-/* .hero {
-    width: 100%;
-    height: 77vh;
-    background: url(./img/fundo.svg) center -138px / 100% 1068px no-repeat, linear-gradient(-45deg, rgb(108, 14, 224) -5%, rgb(240, 55, 166));
-    background-position: center -138px;
-    background-repeat: no-repeat;
-} */
-/* Plano de fundo do hero */
-
 
 /* Parte do menu concluido */
 header {
+    position: relative;
     font-family: 'Open Sans', sans-serif;
     display: flex;
     height: 80px;
@@ -39,6 +31,9 @@ li,a{
     color: #fff;
     text-decoration: none;
 }
+a:hover{
+    color: #1ed760;
+}
 .menu-geral {
     height: 100%;
     display: flex;
@@ -46,3 +41,65 @@ li,a{
     align-items: center;
 }
 /*Fim do Css do menu*/
+.cellphone svg{
+    width: 267px;
+    height: 445px;
+}
+.cellphone img {
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    height: 360px;
+}
+.cellphone {
+    width: 50%;
+    margin-top: 9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner {
+    width: 100%;
+    height: 77vh;
+    background: url(./img/fundo.svg) center / 100% no-repeat, linear-gradient(-45deg, rgb(108, 14, 224), rgb(240, 55, 166)); 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+section.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.cartaz {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+} 
+.cartaz h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1.15;
+    letter-spacing: 0.08px;
+    padding-bottom: 40px;
+}
+.cartaz button{
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 30px;
+}
+.cartaz button:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}
+/* Finalizado o banner */
+.points{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
