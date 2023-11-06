@@ -41,7 +41,7 @@ a:hover{
     align-items: center;
 }
 /*Fim do Css do menu*/
-.cellphone svg{
+/* .cellphone svg{
     width: 267px;
     height: 445px;
 }
@@ -96,7 +96,7 @@ section.banner {
 .cartaz button:hover{
     transition: 1s;
     transform: scale(1.1);
-}
+} */
 /* Finalizado o banner */
 .points{
     position: relative;
