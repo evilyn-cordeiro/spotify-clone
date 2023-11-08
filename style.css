@@ -1,105 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-/* Parte do menu concluido */
+body {
+  font-family: "Inter", sans-serif;
+}
+
 header {
-    position: relative;
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
-    height: 80px;
-    background-color: black;
-    justify-content: space-around;
-    align-items: center;
-    padding: 5px;
+  position: relative;
+  display: flex;
+  height: 80px;
+  background-color: black;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
 }
 .logo {
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    height: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
-.logo svg{
-    height: 40px;
-    fill: #fff;
+.logo svg {
+  height: 40px;
+  fill: #fff;
 }
-ul{
-    display: flex;
-    gap: 20px;
+ul {
+  display: flex;
+  gap: 20px;
 }
-li,a{
-    font-weight: 600;
-    font-size: 16px;
-    color: #fff;
-    text-decoration: none;
+li,
+a {
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
 }
-a:hover{
-    color: #1ed760;
+a:hover {
+  color: #1ed760;
 }
 .menu-geral {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-/*Fim do Css do menu*/
-/* .cellphone svg{
-    width: 267px;
-    height: 445px;
-}
-.cellphone img {
-    position: absolute;
-    z-index: 1;
-    width: 200px;
-    height: 360px;
-}
-.cellphone {
-    width: 50%;
-    margin-top: 9%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .banner {
-    width: 100%;
-    height: 77vh;
-    background: url(./img/fundo.svg) center / 100% no-repeat, linear-gradient(-45deg, rgb(108, 14, 224), rgb(240, 55, 166)); 
-    background-position: center;
-    background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(299deg, #6c0ee0 0%, #f037a6 100%);
+  display: flex;
+  align-items: center;
 }
-section.banner {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+
+.banner-title-container {
+  display: flex;
+  width: 626.18px;
+  height: 229.19px;
+  gap: 24px;
+  flex-direction: column;
+  justify-content: center;
 }
-.cartaz {
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-} 
-.cartaz h1 {
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    font-size: 50px;
-    font-weight: 900;
-    line-height: 1.15;
-    letter-spacing: 0.08px;
-    padding-bottom: 40px;
+
+.banner-title-container h1 {
+  color: #fff;
+  font-family: "Inter";
+  font-size: 59.375px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 73.6px;
+  letter-spacing: -2.56px;
 }
-.cartaz button{
-    text-transform: uppercase;
-    font-weight: 700;
-    border: none;
-    padding: 14px 32px;
-    border-radius: 30px;
-}
-.cartaz button:hover{
-    transition: 1s;
-    transform: scale(1.1);
-} */
-/* Finalizado o banner */
-.points{
-    position: relative;
-    z-index: 1;
-    width: 100%;
+
+.banner-title-container button {
+  width: 216.13px;
+  height: 48px;
+  display: flex;
+  padding: 15px 31.8px 15px 32px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  font-size: 13.453px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
 }
