@@ -1,185 +1,209 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 body {
-    font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 header {
-    display: flex;
-    height: 80px;
-    background-color: black;
-    justify-content: space-around;
-    align-items: center;
-    padding: 5px;
+  display: flex;
+  height: 80px;
+  background-color: black;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
 }
 
 .logo {
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    height: 60px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  height: 60px;
 }
 
 .logo svg {
-    height: 40px;
-    fill: #fff;
+  height: 40px;
+  fill: #fff;
 }
 
 ul {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 li,
 a {
-    text-decoration: none;
-    font-family: Inter;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #fff;
-
+  text-decoration: none;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
 }
 
 a:hover {
-    color: #1ed760;
+  color: #1ed760;
 }
 
 .menu-geral {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menu-geral img {
+  display: none;
 }
 
 .banner {
-    width: 100%;
-    height: 600px;
-    background: url(https://www.scdn.co/i/free/bubbles-dktp.svg) center -138px / 100% 1068px no-repeat, linear-gradient(-45deg, rgb(108, 14, 224) -5%, rgb(240, 55, 166));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 90px;
+  width: 100%;
+  height: 600px;
+  background: url(https://www.scdn.co/i/free/bubbles-dktp.svg) center -138px / 100%
+      1068px no-repeat,
+    linear-gradient(-45deg, rgb(108, 14, 224) -5%, rgb(240, 55, 166));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
 }
 
 .banner-title-container {
-    display: flex;
-    width: 626.18px;
-    height: 229.19px;
-    gap: 24px;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  width: 626.18px;
+  height: 229.19px;
+  gap: 24px;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .banner-hero-container {
-    display: flex;
-    height: 100%;
-    align-items: flex-end;
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
 }
 
 .banner-title-container h1 {
-    color: #fff;
-    font-family: "Inter";
-    font-size: 59.375px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 73.6px;
-    letter-spacing: -2.56px;
+  color: #fff;
+  font-size: 59.375px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 73.6px;
+  letter-spacing: -2.56px;
 }
 
 .banner-title-container button {
-    width: 216.13px;
-    height: 48px;
-    display: flex;
-    padding: 15px 31.8px 15px 32px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100px;
-    background: #fff;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    color: #000;
-    font-size: 13.453px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 20px;
-    text-transform: uppercase;
+  width: 216.13px;
+  height: 48px;
+  display: flex;
+  padding: 15px 31.8px 15px 32px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  font-size: 13.453px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .additional {
-    background-color: #fff;
-    height: 622.59px;
+  background-color: #fff;
+  height: 622.59px;
 }
 
 .merchan {
-    padding: 40px;
-    display: flex;
-    height: 495.19px;
-    background: linear-gradient(180deg, #B023C2 15%, #600BE7 100%);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  padding: 40px;
+  display: flex;
+  height: 495.19px;
+  background: linear-gradient(180deg, #b023c2 15%, #600be7 100%);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .merchan span {
-    font-family: Inter;
-    font-size: 45px;
-    font-weight: 900;
-    line-height: 58px;
-    letter-spacing: -0.9599999785423279px;
-    text-align: center;
-    color: #fff;
+  font-family: Inter;
+  font-size: 45px;
+  font-weight: 900;
+  line-height: 58px;
+  letter-spacing: -0.9599999785423279px;
+  text-align: center;
+  color: #fff;
 }
 
 .menu-acordeon {
-    background-color: #fff;
-    height: 587.13px;
+  background-color: #fff;
+  height: 587.13px;
 }
 
 .acess {
-    display: flex;
-    background: linear-gradient(300.12deg, #6C0EE0 16%, #F037A6 100%);
-    height: 450px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
+  display: flex;
+  background: linear-gradient(300.12deg, #6c0ee0 16%, #f037a6 100%);
+  height: 450px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
 }
 
 .acess span {
-    font-family: Inter;
-    font-size: 45px;
-    font-weight: 900;
-    line-height: 58px;
-    letter-spacing: -0.9599999785423279px;
-    text-align: center;
-    color: #fff;
+  font-family: Inter;
+  font-size: 45px;
+  font-weight: 900;
+  line-height: 58px;
+  letter-spacing: -0.9599999785423279px;
+  text-align: center;
+  color: #fff;
 }
 
 .acess button {
-    width: 216.13px;
-    height: 48px;
-    display: flex;
-    padding: 15px 31.8px 15px 32px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100px;
-    background: #fff;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    color: #000;
-    font-size: 13.453px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 20px;
-    text-transform: uppercase;
+  width: 216.13px;
+  height: 48px;
+  display: flex;
+  padding: 15px 31.8px 15px 32px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  font-size: 13.453px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 footer {
-    background-color: #000;
-    height: 554px;
+  background-color: #000;
+  height: 554px;
+}
+
+@media (max-width: 960px) {
+  header {
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+
+  .menu-geral nav ul {
+    display: none;
+  }
+
+  .menu-geral img {
+    display: block;
+    cursor: pointer;
+  }
+
+  .banner-hero-container {
+    display: none;
+  }
 }
