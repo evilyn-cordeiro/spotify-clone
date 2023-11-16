@@ -138,9 +138,83 @@ a:hover {
   color: #fff;
 }
 
-.menu-acordeon {
+.faq-section {
+  height: 800px;
   background-color: #fff;
-  height: 587.13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq-section h2 {
+  color: #000;
+  text-align: center;
+  font-size: 37.344px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 46px; /* 123.18% */
+  letter-spacing: -0.6px;
+  margin-top: 75px;
+}
+
+.faq-section-principal-container {
+  width: 70%;
+  margin-top: 72px;
+  gap: 10px;
+}
+
+.faq-section-inner-content {
+}
+
+.faq-section div details {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.faq-section summary {
+  display: flex;
+  height: 50px;
+  padding: 20px;
+  color: #000;
+  font-size: 17.156px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+/* Esconde o marcador padrão  da tag*/
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* marcador personalizado com uma seta mais bonitinha */
+summary:after {
+  width: 30px;
+  height: 30px;
+  content: url("src/icons/arrow.svg");
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Rotaciona a imagem quando o <details> está aberto */
+details[open] summary:after {
+  transform: rotate(180deg);
+}
+
+.faq-section summary img {
+  width: 30px;
+}
+
+.faq-section span {
+  color: #117a37;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .acess {
