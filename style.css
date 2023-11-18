@@ -2,6 +2,7 @@
 
 body {
   font-family: "Inter", sans-serif;
+  color: #000;
 }
 
 header {
@@ -11,6 +12,40 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 5px;
+}
+h2 {
+  color: #000;
+  text-align: center;
+  font-size: 37.344px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 46px; /* 123.18% */
+  letter-spacing: -0.6px;
+  margin-top: 75px;
+}
+
+button {
+  width: 220px;
+  height: 48px;
+  display: flex;
+  padding: 15px 31.8px 15px 32px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  font-size: 13.453px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  transform: scale(1.05);
 }
 
 .logo {
@@ -25,12 +60,13 @@ header {
   fill: #fff;
 }
 
-ul {
+header ul {
   display: flex;
   gap: 30px;
+  list-style: none;
 }
 
-li,
+header li,
 a {
   text-decoration: none;
   font-family: Inter;
@@ -40,6 +76,7 @@ a {
   letter-spacing: 0em;
   text-align: left;
   color: #fff;
+  list-style: none;
 }
 
 a:hover {
@@ -60,8 +97,8 @@ a:hover {
 .banner {
   width: 100%;
   height: 600px;
-  background: url(https://www.scdn.co/i/free/bubbles-dktp.svg) center -138px / 100%
-      1068px no-repeat,
+  background: url("https://www.scdn.co/i/free/bubbles-dktp.svg") center -138px /
+      100% 1068px no-repeat,
     linear-gradient(-45deg, rgb(108, 14, 224) -5%, rgb(240, 55, 166));
   display: flex;
   align-items: center;
@@ -93,26 +130,6 @@ a:hover {
   letter-spacing: -2.56px;
 }
 
-.banner-title-container button {
-  width: 216.13px;
-  height: 48px;
-  display: flex;
-  padding: 15px 31.8px 15px 32px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100px;
-  background: #fff;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  color: #000;
-  font-size: 13.453px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 20px;
-  text-transform: uppercase;
-}
-
 .additional {
   background-color: #fff;
   height: 622.59px;
@@ -139,22 +156,11 @@ a:hover {
 }
 
 .faq-section {
-  height: 800px;
+  height: auto;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.faq-section h2 {
-  color: #000;
-  text-align: center;
-  font-size: 37.344px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 46px; /* 123.18% */
-  letter-spacing: -0.6px;
-  margin-top: 75px;
 }
 
 .faq-section-principal-container {
@@ -164,6 +170,16 @@ a:hover {
 }
 
 .faq-section-inner-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-section-inner-content ol {
+  color: #000;
+  padding: 0 0 0 20px;
+  line-height: 25px;
 }
 
 .faq-section div details {
@@ -177,13 +193,19 @@ a:hover {
   height: 50px;
   padding: 20px;
   color: #000;
-  font-size: 17.156px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 800;
   line-height: normal;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  border-radius: 4px;
+}
+
+.faq-section summary:hover {
+  background: #f6f6f6;
+  text-decoration: underline;
 }
 
 /* Esconde o marcador padrão  da tag*/
@@ -228,33 +250,12 @@ details[open] summary:after {
 }
 
 .acess span {
-  font-family: Inter;
-  font-size: 45px;
+  font-size: 70px;
   font-weight: 900;
   line-height: 58px;
   letter-spacing: -0.9599999785423279px;
   text-align: center;
   color: #fff;
-}
-
-.acess button {
-  width: 216.13px;
-  height: 48px;
-  display: flex;
-  padding: 15px 31.8px 15px 32px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100px;
-  background: #fff;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  color: #000;
-  font-size: 13.453px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 20px;
-  text-transform: uppercase;
 }
 
 footer {
@@ -266,6 +267,13 @@ footer {
   header {
     justify-content: space-between;
     padding: 0 16px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+  .acess span {
+    font-size: 50px;
   }
 
   .menu-geral nav ul {
