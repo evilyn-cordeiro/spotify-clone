@@ -195,7 +195,6 @@ button:hover {
 }
 
 .merchan span {
-  font-family: Inter;
   font-size: 45px;
   font-weight: 900;
   line-height: 58px;
@@ -210,19 +209,18 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 40px;
 }
 
 .faq-section-principal-container {
   width: 70%;
   margin-top: 72px;
-  gap: 10px;
 }
 
 .faq-section-inner-content {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 
 .faq-section-inner-content ol {
@@ -234,7 +232,6 @@ button:hover {
 .faq-section div details {
   width: 100%;
   display: flex;
-  margin-bottom: 20px;
 }
 
 .faq-section summary {
@@ -290,7 +287,8 @@ details[open] summary:after {
 
 .acess {
   display: flex;
-  background: linear-gradient(300.12deg, #6c0ee0 16%, #f037a6 100%);
+  background-image: url("src/img/banner-like.png");
+  background-repeat: no-repeat;
   height: 450px;
   flex-direction: column;
   align-items: center;
@@ -299,10 +297,10 @@ details[open] summary:after {
 }
 
 .acess span {
-  font-size: 70px;
-  font-weight: 900;
+  font-size: 80px;
+  font-weight: 800;
   line-height: 58px;
-  letter-spacing: -0.9599999785423279px;
+  letter-spacing: 0.5px;
   text-align: center;
   color: #fff;
 }
@@ -393,7 +391,7 @@ dl {
   background-color: #ffffff;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 990px) {
   header {
     justify-content: space-between;
     padding: 0 16px;
@@ -434,17 +432,19 @@ dl {
   }
 
   .additional-center-inner-container img {
-    width: 104px;
+    width: 100px;
+  }
+
+  .additional-img-container {
+    width: 100px;
+    display: flex;
+    align-items: start;
   }
 
   .additional-center-inner-container {
     width: 100%;
     flex-direction: row;
     gap: 16px;
-  }
-
-  .additional-center-inner-text-container {
-    min-width: 300px;
   }
 
   .additional-center-inner-text-container span {
