@@ -14,6 +14,12 @@ header {
   padding: 5px;
 }
 
+header ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
 h2 {
   color: #000;
   text-align: center;
@@ -21,9 +27,25 @@ h2 {
   font-style: normal;
   font-weight: 900;
   line-height: 46px;
-  /* 123.18% */
   letter-spacing: -0.6px;
   margin-top: 75px;
+}
+
+header li,
+a {
+  text-decoration: none;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  list-style: none;
+}
+
+a:hover {
+  color: #1ed760;
 }
 
 button {
@@ -60,29 +82,6 @@ button:hover {
 .logo svg {
   height: 40px;
   fill: #fff;
-}
-
-header ul {
-  display: flex;
-  gap: 30px;
-  list-style: none;
-}
-
-header li,
-a {
-  text-decoration: none;
-  font-family: Inter;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #fff;
-  list-style: none;
-}
-
-a:hover {
-  color: #1ed760;
 }
 
 .menu-geral {
@@ -135,24 +134,28 @@ a:hover {
 .additional {
   background-color: #fff;
   height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   padding-bottom: 160px;
 }
 
 .additional-center-container {
+  width: 70%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 72px;
   gap: 24px;
 }
 
 .additional-center-inner-container {
-  width: 285px;
+  width: 280px;
   display: flex;
-  gap: 40px;
   align-items: center;
   flex-direction: column;
+  gap: 24px;
 }
 
 .additional-center-inner-container img {
@@ -435,7 +438,7 @@ dl {
   }
 
   .additional-center-inner-container {
-    width: 285px;
+    width: 100%;
     flex-direction: row;
     gap: 16px;
   }
@@ -445,6 +448,7 @@ dl {
   }
 
   .additional-center-inner-text-container span {
+    width: 100%;
     font-size: 18px;
     text-align: left;
   }
