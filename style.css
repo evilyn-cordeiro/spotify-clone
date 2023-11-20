@@ -132,7 +132,51 @@ a:hover {
 
 .additional {
   background-color: #fff;
-  height: 622.59px;
+  height: auto;
+  padding-bottom: 160px;
+}
+
+.additional-center-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 72px;
+  gap: 24px;
+}
+
+.additional-center-inner-container {
+  width: 285px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.additional-center-inner-container img {
+  width: 140px;
+}
+
+.additional-center-inner-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.additional-center-inner-text-container span {
+  text-align: center;
+  font-size: 19.688px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27.3px; /* 138.667% */
+}
+
+.additional-center-inner-text-container p {
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .merchan {
@@ -276,6 +320,19 @@ footer {
     font-size: 50px;
   }
 
+  .banner {
+    height: 450px;
+  }
+
+  .banner-title-container {
+    padding: 16px;
+  }
+
+  .banner-title-container h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
   .menu-geral nav ul {
     display: none;
   }
@@ -287,5 +344,28 @@ footer {
 
   .banner-hero-container {
     display: none;
+  }
+
+  .additional-center-inner-container img {
+    width: 104px;
+  }
+
+  .additional-center-inner-container {
+    width: 285px;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .additional-center-inner-text-container {
+    min-width: 300px;
+  }
+
+  .additional-center-inner-text-container span {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .additional-center-inner-text-container p {
+    text-align: left;
   }
 }
