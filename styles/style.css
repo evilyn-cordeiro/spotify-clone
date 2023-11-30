@@ -288,7 +288,7 @@ details[open] summary:after {
 
 .acess {
   display: flex;
-  background-image: url("img/banner-like.png");
+  background-image: url("../img/banner-like.png");
   background-repeat: no-repeat;
   height: 450px;
   flex-direction: column;
