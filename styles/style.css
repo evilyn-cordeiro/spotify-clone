@@ -264,7 +264,7 @@ summary::-webkit-details-marker {
 summary:after {
   width: 30px;
   height: 30px;
-  content: url("icons/arrow.svg");
+  content: url("../icons/arrow.svg");
   margin-right: 10px;
   transition: transform 0.3s ease;
 }
