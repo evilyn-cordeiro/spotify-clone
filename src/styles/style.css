@@ -2,6 +2,7 @@
 
 body {
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
   color: #000;
 }
 
@@ -254,7 +255,7 @@ button:hover {
   text-decoration: underline;
 }
 
-/* Esconde o marcador padrão  da tag*/
+/* serve para esconder o marcador padrão  da tag*/
 summary::-webkit-details-marker {
   display: none;
 }
@@ -263,7 +264,7 @@ summary::-webkit-details-marker {
 summary:after {
   width: 30px;
   height: 30px;
-  content: url("src/icons/arrow.svg");
+  content: url("/src/icons/arrow.svg");
   margin-right: 10px;
   transition: transform 0.3s ease;
 }
@@ -287,7 +288,7 @@ details[open] summary:after {
 
 .acess {
   display: flex;
-  background-image: url("src/img/banner-like.png");
+  background-image: url("/src/img/banner-like.png");
   background-repeat: no-repeat;
   height: 450px;
   flex-direction: column;
@@ -306,12 +307,10 @@ details[open] summary:after {
 }
 footer {
   background-color: #000;
-  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 40px;
-  justify-content: space-between;
 }
 
 .logo-footer {
@@ -329,6 +328,7 @@ footer {
 .main-footer {
   width: 100%;
   display: flex;
+  justify-content: space-between;
   padding-top: 50px;
 }
 .sub-main-footer {
@@ -357,11 +357,11 @@ dl {
 }
 
 .menus-footer {
-  min-width: 70%;
   display: flex;
   justify-content: center;
 }
 .redes {
+  height: fit-content;
   display: flex;
   align-items: flex-start;
 }
@@ -504,6 +504,7 @@ dl {
     flex-direction: column;
     margin-bottom: 20px;
     gap: 36px;
+    margin-top: 36px;
   }
 
   .redes {
