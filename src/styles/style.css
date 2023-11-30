@@ -342,6 +342,11 @@ dd {
   color: #fff;
 }
 
+dd:hover {
+  color: #1ed760;
+  cursor: pointer;
+}
+
 dt {
   color: #919496;
   font-weight: 700;
@@ -383,10 +388,6 @@ dl {
   display: flex;
 }
 
-.redes ul li a svg {
-  fill: #222326;
-  background-color: #ffffff;
-}
 .linguage {
   width: 100%;
   display: flex;
