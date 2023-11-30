@@ -172,7 +172,8 @@ button:hover {
   font-size: 19.688px;
   font-style: normal;
   font-weight: 700;
-  line-height: 27.3px; /* 138.667% */
+  line-height: 27.3px;
+  /* 138.667% */
 }
 
 .additional-center-inner-text-container p {
@@ -303,13 +304,14 @@ details[open] summary:after {
   text-align: center;
   color: #fff;
 }
-
 footer {
   background-color: #000;
   height: 500px;
   display: flex;
-  justify-content: center;
-  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+  justify-content: space-between;
 }
 
 .logo-footer {
@@ -328,6 +330,12 @@ footer {
   width: 100%;
   display: flex;
   padding-top: 50px;
+}
+.sub-main-footer {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  flex-direction: column;
 }
 
 dd {
@@ -353,11 +361,14 @@ dl {
   display: flex;
   justify-content: center;
 }
-
+.redes {
+  display: flex;
+  align-items: flex-start;
+}
 .redes ul {
   display: flex;
   gap: 20px;
-  flex-direction: row;
+  justify-content: center;
 }
 
 .redes ul li {
@@ -375,6 +386,36 @@ dl {
 .redes ul li a svg {
   fill: #222326;
   background-color: #ffffff;
+}
+.linguage {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.politcs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.politcs .politcs-list ul {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.politcs .politcs-list ul li a,
+.politcs .politcs-copy span,
+.linguage span a {
+  width: 122.65px;
+  height: 15px;
+  top: 477px;
+  left: 587.72px;
+  font-family: Inter;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #919496;
 }
 
 @media screen and (max-width: 990px) {
@@ -442,10 +483,10 @@ dl {
   .additional-center-inner-text-container p {
     text-align: left;
   }
+
   .banner-title-container {
     padding: 20px;
   }
-
   footer {
     height: 100%;
   }
@@ -463,6 +504,13 @@ dl {
     flex-direction: column;
     margin-bottom: 20px;
     gap: 36px;
+  }
+
+  .redes {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .redes ul {
